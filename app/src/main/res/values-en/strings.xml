@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="empty_note_toast">Title or content not found</string>
+    <string name="save_note_toast">Note saved</string>
+    <string name="header_tooltip">Title</string>
+</resources>
