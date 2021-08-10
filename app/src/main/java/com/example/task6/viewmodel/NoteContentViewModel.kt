@@ -30,16 +30,6 @@ class NoteContentViewModel(private val repository: INoteRepository, private val 
     }
 
     fun saveNote() {
-//        var title: String
-//        var content: String
-//        if (this.title.value == null || this.content.value == null) {
-//            title = ""
-//            content = ""
-//        } else {
-//            title = this.title.value.toString()
-//            content = this.content.value.toString()
-//        }
-
         val title = this.title.value.toString()
         val content = this.content.value.toString()
 

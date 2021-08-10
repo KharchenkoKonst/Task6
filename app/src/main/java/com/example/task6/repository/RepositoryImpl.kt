@@ -22,22 +22,6 @@ open class RepositoryImpl private constructor(context: Context) : INoteRepositor
     override suspend fun downloadNote(id: Int) {
         val note = api.getData(id)
         dao.insert(Note("date", note.title, note.body))
-//        val response = api.getData(id).enqueue(object: Callback<NetworkModel>{
-//            override fun onResponse(call: Call<NetworkModel>, response: Response<NetworkModel>) {
-//                TODO("Not yet implemented")
-//            }
-//
-//            override fun onFailure(call: Call<NetworkModel>, t: Throwable) {
-//                TODO("Not yet implemented")
-//            }
-//
-//        })
-//        if (response.isSuccessful) {
-//            }
-//        response.body()?.let {
-//            dao.insert(Note(it.createdAt, "Скачанная заметка", it.text))
-//        }
-
     }
 
     override suspend fun insertNote(note: Note) {
